@@ -12,6 +12,8 @@ class IntroductionUI extends StatefulWidget {
 class _IntroductionUIState extends State<IntroductionUI> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.deepOrange[100],
+    );
   }
 }
