@@ -18,6 +18,7 @@ class _IntroductionUIState extends State<IntroductionUI> {
     return Scaffold(
       backgroundColor: Colors.deepOrange[100],
       body: IntroductionScreen(
+        skipOrBackFlex: 0, //
         scrollPhysics: BouncingScrollPhysics(),
         globalBackgroundColor: Colors.deepOrange[50],
         pages: [
@@ -161,6 +162,7 @@ class _IntroductionUIState extends State<IntroductionUI> {
           ),
         ),
         onSkip: () {
+          //ไม่สามารถย้อนกลับได้ pushPeplacement
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
